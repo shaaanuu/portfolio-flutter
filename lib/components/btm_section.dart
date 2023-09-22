@@ -7,11 +7,11 @@ class BtmSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
+    return const Align(
       alignment: Alignment.bottomLeft,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: const [
+        children: [
           BlueBtn(),
           Text(
             'Muhammed Shan ©️2022',

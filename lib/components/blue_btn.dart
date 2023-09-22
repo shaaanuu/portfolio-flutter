@@ -9,7 +9,7 @@ class BlueBtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
         RectangleBtn(
           clr: Colors.blue,

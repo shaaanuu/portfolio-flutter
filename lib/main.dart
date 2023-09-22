@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primaryColorDark: Colors.black,
       ),
-      home: ProfilePage(),
+      home: const ProfilePage(),
     );
   }
 }

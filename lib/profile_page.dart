@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'components/btm_section.dart';
 import 'components/center_section.dart';
 import 'components/orange_btn_section.dart';
-import 'components/rectangle_btn.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -19,8 +18,8 @@ class ProfilePage extends StatelessWidget {
         width: size.width,
         height: size.height,
         padding: const EdgeInsets.all(30),
-        child: Stack(
-          children: const [
+        child: const Stack(
+          children: [
             OrangeBtnSection(),
             CenterSection(),
             BtmSection(),

@@ -7,11 +7,11 @@ class OrangeBtnSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
+    return const Align(
       alignment: Alignment.topRight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
-        children: const [
+        children: [
           RectangleBtn(
             clr: Colors.orange,
             txt: 'about',
