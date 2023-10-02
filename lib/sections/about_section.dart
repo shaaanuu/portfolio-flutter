@@ -8,12 +8,15 @@ class AboutSection extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        const Text(
-          "Hello, I'm",
-          style: TextStyle(
-            color: Colors.black,
-            fontWeight: FontWeight.bold,
-            fontSize: 14,
+        const Padding(
+          padding: EdgeInsets.only(top: 10),
+          child: Text(
+            "Hello, I'm",
+            style: TextStyle(
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
+              fontSize: 16,
+            ),
           ),
         ),
         const Text(
@@ -21,7 +24,7 @@ class AboutSection extends StatelessWidget {
           style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.w900,
-            fontSize: 40,
+            fontSize: 38,
           ),
         ),
         const Text(
@@ -29,12 +32,13 @@ class AboutSection extends StatelessWidget {
           style: TextStyle(
             color: Colors.grey,
             fontWeight: FontWeight.w700,
-            fontSize: 28,
+            fontSize: 26,
           ),
         ),
         Padding(
           padding: const EdgeInsets.all(10),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextButton(
                 style: TextButton.styleFrom(
@@ -77,33 +81,37 @@ class AboutSection extends StatelessWidget {
             ],
           ),
         ),
-        Row(
-          children: [
-            Container(
-              margin: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.circular(300),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 20),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                margin: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(300),
+                ),
+                child: IconButton(
+                  color: Colors.white,
+                  onPressed: () {},
+                  icon: const Icon(Icons.ac_unit_rounded),
+                ),
               ),
-              child: IconButton(
-                color: Colors.white,
-                onPressed: () {},
-                icon: Icon(Icons.ac_unit_rounded),
+              Container(
+                margin: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(300),
+                ),
+                child: IconButton(
+                  color: Colors.white,
+                  onPressed: () {},
+                  icon: const Icon(Icons.agriculture_outlined),
+                ),
               ),
-            ),
-            Container(
-              margin: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                color: Colors.black,
-                borderRadius: BorderRadius.circular(300),
-              ),
-              child: IconButton(
-                color: Colors.white,
-                onPressed: () {},
-                icon: Icon(Icons.agriculture_outlined),
-              ),
-            ),
-          ],
+            ],
+          ),
         )
       ],
     );

@@ -7,6 +7,9 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.sizeOf(context);
+    ValueNotifier valueNotifier = ValueNotifier(size.width);
+
     ButtonStyle navBarBtnStyle = TextButton.styleFrom(
       foregroundColor: Colors.black,
       textStyle: const TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
@@ -31,33 +34,41 @@ class NavBar extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 15),
-            child: Row(
-              children: [
-                TextButton(
-                  style: navBarBtnStyle,
-                  onPressed: navBarBtnFunction,
-                  child: const Text('About'),
-                ),
-                TextButton(
-                  style: navBarBtnStyle,
-                  onPressed: navBarBtnFunction,
-                  child: const Text('Experience'),
-                ),
-                TextButton(
-                  style: navBarBtnStyle,
-                  onPressed: navBarBtnFunction,
-                  child: const Text('Projects'),
-                ),
-                TextButton(
-                  style: navBarBtnStyle,
-                  onPressed: navBarBtnFunction,
-                  child: const Text('Contacts'),
-                ),
-              ],
-            ),
-          )
+          ValueListenableBuilder(
+            valueListenable: valueNotifier,
+            builder: (context, value, _) => value >= 600
+                ? Padding(
+                    padding: const EdgeInsets.only(right: 15),
+                    child: Row(
+                      children: [
+                        TextButton(
+                          style: navBarBtnStyle,
+                          onPressed: navBarBtnFunction,
+                          child: const Text('About'),
+                        ),
+                        TextButton(
+                          style: navBarBtnStyle,
+                          onPressed: navBarBtnFunction,
+                          child: const Text('Experience'),
+                        ),
+                        TextButton(
+                          style: navBarBtnStyle,
+                          onPressed: navBarBtnFunction,
+                          child: const Text('Projects'),
+                        ),
+                        TextButton(
+                          style: navBarBtnStyle,
+                          onPressed: navBarBtnFunction,
+                          child: const Text('Contact'),
+                        ),
+                      ],
+                    ),
+                  )
+                : IconButton(
+                    onPressed: () => Scaffold.of(context).openDrawer(),
+                    icon: const Icon(Icons.menu_rounded),
+                  ),
+          ),
         ],
       ),
     );

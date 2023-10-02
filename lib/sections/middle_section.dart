@@ -8,16 +8,31 @@ class MiddleSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 50),
-      child: const Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          ProfileSection(),
-          AboutSection(),
-        ],
-      ),
+    var size = MediaQuery.sizeOf(context);
+    ValueNotifier valueNotifier = ValueNotifier(size.width);
+
+    return ValueListenableBuilder(
+      valueListenable: valueNotifier,
+      builder: (context, value, _) {
+        return value >= 630
+            ? const Padding(
+                padding: EdgeInsets.symmetric(vertical: 50),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    ProfileSection(),
+                    AboutSection(),
+                  ],
+                ),
+              )
+            : const Column(
+                children: [
+                  ProfileSection(),
+                  AboutSection(),
+                ],
+              );
+      },
     );
   }
 }

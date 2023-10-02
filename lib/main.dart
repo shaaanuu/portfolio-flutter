@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'main_page.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -24,7 +22,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: MainPage(),
+      home: const MainPage(),
     );
   }
 }

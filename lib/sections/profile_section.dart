@@ -8,7 +8,6 @@ class ProfileSection extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(300),
       child: Image.asset('lib/assets/pic.JPG', width: 300),
-
     );
   }
 }
