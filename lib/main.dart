@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'profile_page.dart';
+import 'main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         primaryColorDark: Colors.black,
+        scaffoldBackgroundColor: Colors.white,
       ),
-      home: ProfilePage(),
+      home: MainPage(),
     );
   }
 }
