@@ -7,8 +7,6 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.sizeOf(context);
-
     ButtonStyle navBarBtnStyle = TextButton.styleFrom(
       foregroundColor: Colors.black,
       textStyle: const TextStyle(fontWeight: FontWeight.w600, fontSize: 16),

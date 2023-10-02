@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_website/sections/nav_bar.dart';
+
+import 'sections/middle_section.dart';
+import 'sections/nav_bar.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -10,6 +12,7 @@ class MainPage extends StatelessWidget {
       body: Column(
         children: [
           NavBar(),
+          MiddleSection(),
         ],
       ),
     );

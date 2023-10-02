@@ -15,9 +15,14 @@ class MyApp extends StatelessWidget {
       title: 'Portfolio website',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColorDark: Colors.black,
-        scaffoldBackgroundColor: Colors.white,
+        brightness: Brightness.light,
+        primaryColor: Colors.white,
+        iconButtonTheme: IconButtonThemeData(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(Colors.red),
+            foregroundColor: MaterialStateProperty.all(Colors.red),
+          ),
+        ),
       ),
       home: MainPage(),
     );
