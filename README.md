@@ -14,7 +14,7 @@ This portfolio showcases my skills as a flutter frontend developer through a sle
 ✨ Minimalistic design\
 ✨ Responsive layout\
 ✨ 'About,' 'Experience,' 'Projects,' and 'Contact' sections\
-✨ Blog page (coming soon)
+✨ Used ValueNotifier and ValueNotifierBuilder to make it responsive
 
 ## How to Use
 1. Clone the repository.
@@ -32,7 +32,7 @@ This portfolio showcases my skills as a flutter frontend developer through a sle
 Feel free to reach out and connect with me anytime! 🚀
 
 ## Credits
-A pic from somewhere (But it's non-copyright image) ;)
+A profile pic from somewhere (But it's non-copyright image) ;)
 
 ## Contributions
 
