@@ -10,8 +10,10 @@ This portfolio showcases my skills as a flutter frontend developer through a sle
 ## Screenshots
 **Mobile**
 ![Mobile Design](/screenshots/design_mobile.png)
+
 **Desktop**
 ![Desktop Design](/screenshots/design_desktop.png)
+
 This represents just the design; the actual design may differ from this.
 
 ## Features
@@ -46,4 +48,4 @@ Let's make the web a more beautiful place! 😊
 ## Demo
 
 https://shaaanuu.vercel.app/
-(wait some seconds to load. Inshaallah i will add a loading animation)
+(wait some seconds to load.)
