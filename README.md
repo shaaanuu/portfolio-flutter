@@ -8,7 +8,11 @@ Welcome to my minimal and responsive Flutter portfolio! 🌟
 This portfolio showcases my skills as a flutter frontend developer through a sleek and responsive design. Explore my work, experience, and get in touch.
 
 ## Screenshots
-📸 Screenshots coming soon! 🤳
+**Mobile**
+![Mobile Design](/screenshots/design_mobile.png)
+**Desktop**
+![Desktop Design](/screenshots/design_desktop.png)
+This represents just the design; the actual design may differ from this.
 
 ## Features
 ✨ Minimalistic design\
