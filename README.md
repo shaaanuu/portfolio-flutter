@@ -47,5 +47,5 @@ Let's make the web a more beautiful place! 😊
 
 ## Demo
 
-https://shaaanuu.vercel.app/
+https://shaaanuu-flutter.vercel.app
 (wait some seconds to load.)
